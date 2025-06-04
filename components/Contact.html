@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/technovapng.png" type="image/x-icon">
+
+    <!--=============== REMIXICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title>Technova</title>
+</head>
+<body class="top">
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../components/Home.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../components/About.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../components/Modules.html" class="nav__link">Modules</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../components/Register.html" class="nav__link">Register</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../components/Sponsors.html" class="nav__link">Sponsor</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../components/Contact.html" class="nav__link">Contact Us</a>
+                    </li>
+                    <a href="#" class="nav__logo">
+                        <img src="../assets/img/technovapng.png" alt="logo">
+                    </a>    
+                    <!-- <div class="nav__link">
+                        <a href="#pricing" class="button nav__button">Register Now</a>
+                    </div> -->
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+<!-- Query Form Section -->
+<section id="query-form">
+    <h2>Ask Us Anything</h2>
+    <form id="contactForm" method="POST" action="../assets/contact.php">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit Query</button>
+    </form>
+</section>
+
+<!-- WhatsApp Contact Section -->
+<section id="whatsapp-contact">
+    <a href="https://wa.me/03072248485" target="_blank">Chat with us on WhatsApp</a>
+</section>
+
+
+      <!--==================== BANK DETAILS SCROLLING BOTTOM ====================-->
+  <div class="bank-slider-bottom">
+    <div class="bank-slider-track">
+      <span>Account Name: Institute of Business Management &nbsp;|&nbsp;</span>
+      <span>Account Number: 5501309900055576 &nbsp;|&nbsp;</span>
+      <span>Bank: Standard Chartered Bank &nbsp;|&nbsp;</span>
+    </div>
+  </div>
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <!-- <script src="/assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/technovapng.png" type="image/x-icon">
+
+    <!--=============== REMIXICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title>Technova</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="../Home.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../components/About.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../components/Modules.html" class="nav__link">Modules</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../components/Register.html" class="nav__link">Register</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../components/Sponsors.html" class="nav__link">Sponsor</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="../components/Contact.html" class="nav__link">Contact Us</a>
+                  </li>
+                    <a href="#" class="nav__logo">
+                        <img src="../assets/img/technovapng.png" alt="logo">
+                    </a>    
+                    <!-- <div class="nav__link">
+                        <a href="#pricing" class="button nav__button">Register Now</a>
+                    </div> -->
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+
+ <section class="section">
+    <div class="container">
+      <div class="about__container">
+        <div class="section__data">
+                <div class="section__titles">
+                    <h1 class="section__title-border">COMPETITION</h1>
+                    <h1 class="section__title">MODULES</h1>
+                  </div>
+                  <div class="section__title">
+                    <h3>Maths Mania</h3>
+                  </div>
+            </div>
+            <div>
+      </div>
+      </div>
+        <p class="about__description">
+          Maths Mania is an exciting and intellectually stimulating competition designed to challenge students’ problem-solving abilities and analytical thinking. It offers a dynamic platform where participants tackle a variety of mathematical puzzles, logic-based problems, and rapid-fire questions. The competition aims to promote a love for mathematics through engaging and competitive activities that go beyond traditional classroom learning. Whether it’s algebra, geometry, number theory, or mental math, Maths Mania tests speed, accuracy, and reasoning under pressure. Ideal for students who enjoy challenges, this event fosters teamwork, sharpens critical thinking, and encourages creative approaches to solving mathematical problems in a fun and rewarding environment.
+        </p>
+            <!-- Typing Slogan -->
+      <p class="home__slogan" id="slogan"></p>
+
+        <div class="mathsmania__container">
+                <article class="program__card">
+                    <h3 class="program__title">MathsMania</h3>
+                    <p class="program__description">
+                        Maths Mania is a thrilling competition that challenges students’ problem-solving and logical thinking skills through puzzles, mental math, and rapid-fire questions. It promotes a love for mathematics beyond textbooks, encouraging quick thinking, accuracy, and creativity. The event fosters enthusiasm, teamwork, and sharp analytical skills in a fun, competitive setting.                        
+                    </p>
+                    <a href="https://forms.gle/WAd4DsA8tT7RDGg59" class="button button__flex pricing__button">
+                        Register Now <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+      <!--==================== BANK DETAILS SCROLLING BOTTOM ====================-->
+  <div class="bank-slider-bottom">
+    <div class="bank-slider-track">
+      <span>Account Name: Institute of Business Management &nbsp;|&nbsp;</span>
+      <span>Account Number: 5501309900055576 &nbsp;|&nbsp;</span>
+      <span>Bank: Standard Chartered Bank &nbsp;|&nbsp;</span>
+    </div>
+  </div>
+    <!--=============== SCROLLREVEAL ===============-->
+    <!-- <script src="/assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>const sloganEl = document.getElementById('slogan');
+      const slogans = [
+      "No. of Participants Allowed: 01",
+      "Registration Fee: Rs: 1500/="
+    ];
+    let i = 0;
+
+  function typeNext() {
+    sloganEl.textContent = slogans[i];
+    i = (i + 1) % slogans.length;
+    setTimeout(() => {
+      sloganEl.style.animation = 'none';
+      sloganEl.offsetHeight; // force reflow
+      sloganEl.style.animation = '';
+      typeNext();
+    }, 2000); // wait before typing next slogan
+  } setTimeout(typeNext, 900);
+</script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/technovapng.png" type="image/x-icon">
+
+    <!--=============== REMIXICON ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Technova</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="components/Home.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="components/About.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="components/Modules.html" class="nav__link">Modules</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="components/Register.html" class="nav__link">Register</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="components/Sponsors.html" class="nav__link">Sponsor</a>
+                    </li>
+                    <li class="nav__item">
+                      <a href="components/Contact.html" class="nav__link">Contact Us</a>
+                  </li>
+                    <a href="#" class="nav__logo">
+                        <img src="assets/img/technovapng.png" alt="logo">
+                    </a>    
+                    <!-- <div class="nav__link">
+                        <a href="#pricing" class="button nav__button">Register Now</a>
+                    </div> -->
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
+    </header>
+<section class="home section" id="home">
+  <div class="logos__container container grid"style="display:flex; align-items:centre; justify-content: flex-start;">
+          <img src="assets/img/IOBM-.png" alt="logo image" class="logos__img";>
+          <img src="assets/img/ccsis-logo.png" alt="logo image" class="logos__img";>
+          <img src="assets/img/IEEESTDBRNCH-.png" alt="logo image" class="logos__img";>
+      </div>
+  <div class="home__container container grid">
+    <div class="home__data">
+      <h1 class="home__title">TECHNOVA'25</h1>
+      <!-- Typing Slogan -->
+      <p class="home__slogan" id="slogan"></p>  
+      
+      <!-- Mark Your Calendar -->
+      <h3 class="home__calendar">📅 MARK YOUR CALENDAR</h3>
+
+      <!-- Animated Dates -->
+      <div class="home__dates bounce-glow">
+        <span class="event-date">28th June, 2025</span>
+    </div>
+
+      <!-- Registration Auto Slider -->
+      <div class="home__slider">
+        <marquee behavior="scroll" direction="left" scrollamount="6">
+          🚨 Last Date of Registration: 24th June, 2025 — Hurry up and Register Now!
+        </marquee>
+      </div>
+
+      <!-- CTA -->
+      <a href="components/Modules.html" class="button button__flex pricing__button">
+        Get Started <i class="ri-arrow-right-line"></i>
+      </a>
+    </div>
+
+    <div class="home__images">
+      <img src="assets/img/ccsis.jpg" alt="homeimage" class="home__img">
+      <div class="home__triangle home__triangle-3"></div>
+      <div class="home__triangle home__triangle-2"></div>
+      <div class="home__triangle home__triangle-1"></div>
+    </div>
+  </div>
+</section>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <!-- <script src="/assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>const sloganEl = document.getElementById('slogan');
+      const slogans = [
+      "Unleash Innovation, Ignite the Future!",
+      "Where Ideas Meet Technology",
+      "Think. Create. Elevate."
+    ];
+    let i = 0;
+
+  function typeNext() {
+    sloganEl.textContent = slogans[i];
+    i = (i + 1) % slogans.length;
+    setTimeout(() => {
+      sloganEl.style.animation = 'none';
+      sloganEl.offsetHeight; // force reflow
+      sloganEl.style.animation = '';
+      typeNext();
+    }, 2000); // wait before typing next slogan
+  } setTimeout(typeNext, 1000);
+</script>
+<script>
+  ScrollReveal().reveal('.home__data', { delay: 200, origin: 'left', distance: '50px' });
+  ScrollReveal().reveal('.home__images', { delay: 400, origin: 'right', distance: '50px' });
+</script>
+    <!--=============== MAIN JS ===============-->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
