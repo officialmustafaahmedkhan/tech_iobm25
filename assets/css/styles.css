@@ -1561,7 +1561,7 @@ img {
     transform: translateX(-9rem);
   }
 
-  . {
+  .home__img {
     width: 700px;
     transform: translateX(2rem);
   }
