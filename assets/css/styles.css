@@ -512,8 +512,38 @@ img {
 /*=============== PROGRAM ===============*/
 .program__container {
   display: grid;
-  grid-template-columns: repeat(3,1fr) !important;
-  
+  grid-template-columns: repeat(3, 1fr); /* Desktop: 3 columns */
+  gap: 2rem;
+}
+
+.program__container1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Desktop: 2 columns */
+  gap: 2rem;
+}
+
+.program__card,
+.program__card1 {
+  background-color: hsla(79, 6%, 64%, 0.07); /* Fixed hsla typo */
+  padding: 1.5rem 2rem;
+  border: 2px solid transparent;
+  transition: 2s ease;
+}
+
+/* Tablets and mobile: 2 columns */
+@media (max-width: 768px) {
+  .program__container,
+  .program__container1 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Small mobile: 1 column */
+@media (max-width: 480px) {
+  .program__container,
+  .program__container1 {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 .program__card {
@@ -528,13 +558,6 @@ img {
   display: grid;
   grid-template-columns: repeat(2,1fr) !important;
   
-}
-
-.program__card1 {
-  background-color: 9hsla(79, 6%, 64%, .07);
-  padding: 1.5rem 2rem;
-  border: 2px solid transparent;
-  transition: 2s ease;
 }
 
 .web__card {
