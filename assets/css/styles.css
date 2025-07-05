@@ -547,12 +547,29 @@ img {
 }
 
 .program__card {
-  background-color: 9hsla(79, 6%, 64%, .07);
-  padding: 1.5rem 2rem;
-  border: 2px solid transparent;
-  transition: 2s ease;
+      background-color: hsla(79, 6%, 64%, 0.07);
+      padding: 1.5rem 2rem;
+      border: 2px solid transparent;
+      transition: 0.3s ease;
+      width: 100%;
+      max-width: 350px;
+      box-sizing: border-box;
+      flex: 1 1 300px;
+    }
 
-}
+    @media screen and (max-width: 768px) {
+      .program__card {
+        flex: 1 1 45%;
+        max-width: 90%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .program__card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
 
 .program__container1 {
   display: grid;
@@ -578,9 +595,12 @@ img {
   transition: background .5s, border .4s;
 }
 .fyp__container {
-  display: grid;
-  grid-template-columns: repeat(3,1fr) !important;
-}
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
 .startup__card {
   background-color: 9hsla(79, 6%, 64%, .07);
   padding: 1.5rem 2rem;
