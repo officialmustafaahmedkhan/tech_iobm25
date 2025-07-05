@@ -2,118 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/technovapng.png" type="image/x-icon">
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/technovapng.png" type="image/x-icon" />
 
-    <!--=============== REMIXICON ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <!--=============== REMIXICON ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="../assets/css/styles.css">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
 
-    <title>Technova</title>
+  <title>Technova - E-Sports</title>
+
+  <!--=============== E-Sports Responsive Fixes ===============-->
+  <style>
+    .fyp__container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .program__card {
+      background-color: hsla(79, 6%, 64%, 0.07);
+      padding: 1.5rem 2rem;
+      border: 2px solid transparent;
+      transition: 0.3s ease;
+      width: 100%;
+      max-width: 350px;
+      box-sizing: border-box;
+      flex: 1 1 300px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .program__card {
+        flex: 1 1 45%;
+        max-width: 90%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .program__card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="../Home.html" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../components/About.html" class="nav__link">About</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../components/Modules.html" class="nav__link">Modules</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../components/Register.html" class="nav__link">Register</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../components/Sponsors.html" class="nav__link">Sponsor</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../components/Contact.html" class="nav__link">Contact Us</a>
-                    </li>
-                    <a href="#" class="nav__logo">
-                        <img src="../assets/img/technovapng.png" alt="logo">
-                    </a>    
-                    <!-- <div class="nav__link">
-                        <a href="#pricing" class="button nav__button">Register Now</a>
-                    </div> -->
-                </ul>
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
-            </div>
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-menu-line"></i>
-            </div>
-        </nav>
-    </header>
- <section class="section">
+  <!--=============== HEADER ===============-->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../Home.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="../components/About.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="../components/Modules.html" class="nav__link">Modules</a></li>
+          <li class="nav__item"><a href="../components/Register.html" class="nav__link">Register</a></li>
+          <li class="nav__item"><a href="../components/Sponsors.html" class="nav__link">Sponsor</a></li>
+          <li class="nav__item"><a href="../components/Contact.html" class="nav__link">Contact Us</a></li>
+          <a href="#" class="nav__logo">
+            <img src="../assets/img/technovapng.png" alt="Technova logo" />
+          </a>
+        </ul>
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== E-SPORTS MODULE SECTION ===============-->
+  <section class="section">
     <div class="container">
       <div class="about__container">
         <div class="section__data">
-                <div class="section__titles">
-                    <h1 class="section__title-border">COMPETITION</h1>
-                    <h1 class="section__title">MODULES</h1>
-                  </div>
-                  <div class="section__title">
-                    <h3>E-Sports</h3>
-                  </div>
-            </div>
-            <div>
-      </div>
-      </div>
+          <div class="section__titles">
+            <h1 class="section__title-border">COMPETITION</h1>
+            <h1 class="section__title">MODULES</h1>
+          </div>
+          <div class="section__title">
+            <h3>E-Sports</h3>
+          </div>
+        </div>
+
         <p class="about__description">
           E-Sports is a dynamic and competitive gaming event that brings together enthusiasts of popular titles like Tekken, FIFA, and PUBG. It provides a platform for gamers to showcase their skills, reflexes, and strategic thinking in high-stakes virtual battles. Participants compete individually or in teams, demonstrating precision, coordination, and digital sportsmanship. The event fosters a strong sense of community, encouraging interaction, learning, and healthy competition among players. With fast-paced action and immersive gameplay, E-Sports not only entertains but also highlights the growing influence of the gaming industry. It’s an exciting opportunity for players to shine and celebrate their passion for gaming.
         </p>
-        <!-- Typing Slogan -->
-        <p class="home__slogan" id="slogan"></p>
+
         <div class="fyp__container">
-                <article class="program__card">
-                    <h3 class="program__title">PUBG Mobile</h3>
-                    <p class="program__description">
-                        PUBG (PlayerUnknown’s Battlegrounds) is an action-packed battle royale game where players compete to be the last one standing. Set on vast maps, participants use strategy, survival skills, and teamwork to eliminate opponents. The game tests reflexes, decision-making, and tactical planning in a thrilling, fast-paced virtual combat environment.
-                    </p>
-                    <a href="https://forms.gle/DLiW7AkfGvK1RVDf9" class="button button__flex pricing__button">
-                        Register Now <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
-                <article class="program__card">
-                    <h3 class="program__title">FIFA'25</h3>
-                    <!-- Typing Slogan
-                    <p class="home__slogan" id="slogan2"></p> -->
-                    <p class="program__description">
-                        FIFA 25 is a realistic football simulation game that offers immersive gameplay, updated teams, and advanced mechanics. Players compete in intense matches, showcasing skills in passing, dribbling, and scoring. With enhanced graphics and modes, FIFA 25 delivers an exciting experience for football fans and gamers seeking strategic and competitive play.                        
-                    </p>
-                    <a href="https://forms.gle/gAkQWtsiNWnq4167A" class="button button__flex pricing__button">
-                        Register Now <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
-                <article class="program__card">
-                    <h3 class="program__title">TEKKEN 8</h3>
-                    <p class="program__description">
-                        <!-- Typing Slogan
-                    <p class="home__slogan" id="slogan2"></p> -->
-                        TEKKEN is a legendary fighting game that features intense one-on-one battles between diverse characters, each with unique fighting styles and combos. Players test their reflexes, strategy, and timing in fast-paced duels. TEKKEN combines martial arts, compelling storylines, and competitive gameplay, making it a favorite in global E-Sports tournaments.                        
-                    </p>
-                    <a href="https://forms.gle/gAkQWtsiNWnq4167A" class="button button__flex pricing__button">
-                        Register Now <i class="ri-arrow-right-line"></i>
-                    </a>
-                </article>
-            </div>
+          <!-- PUBG -->
+          <article class="program__card">
+            <h3 class="program__title">PUBG Mobile</h3>
+            <p class="program__description">
+              PUBG (PlayerUnknown’s Battlegrounds) is an action-packed battle royale game where players compete to be the last one standing. Set on vast maps, participants use strategy, survival skills, and teamwork to eliminate opponents. The game tests reflexes, decision-making, and tactical planning in a thrilling, fast-paced virtual combat environment.
+            </p>
+            <a href="https://forms.gle/DLiW7AkfGvK1RVDf9" class="button button__flex pricing__button">
+              Register Now <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <!-- FIFA -->
+          <article class="program__card">
+            <h3 class="program__title">FIFA'25</h3>
+            <p class="program__description">
+              FIFA 25 is a realistic football simulation game that offers immersive gameplay, updated teams, and advanced mechanics. Players compete in intense matches, showcasing skills in passing, dribbling, and scoring. With enhanced graphics and modes, FIFA 25 delivers an exciting experience for football fans and gamers seeking strategic and competitive play.
+            </p>
+            <a href="https://forms.gle/gAkQWtsiNWnq4167A" class="button button__flex pricing__button">
+              Register Now <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
+
+          <!-- TEKKEN -->
+          <article class="program__card">
+            <h3 class="program__title">TEKKEN 8</h3>
+            <p class="program__description">
+              TEKKEN is a legendary fighting game that features intense one-on-one battles between diverse characters, each with unique fighting styles and combos. Players test their reflexes, strategy, and timing in fast-paced duels. TEKKEN combines martial arts, compelling storylines, and competitive gameplay, making it a favorite in global E-Sports tournaments.
+            </p>
+            <a href="https://forms.gle/gAkQWtsiNWnq4167A" class="button button__flex pricing__button">
+              Register Now <i class="ri-arrow-right-line"></i>
+            </a>
+          </article>
         </div>
-        
-    </section>
+      </div>
+    </div>
+  </section>
+</body>
 
-
+</html>
     
       <!--==================== BANK DETAILS SCROLLING BOTTOM ====================-->
   <div class="bank-slider-bottom">
