@@ -525,6 +525,7 @@ img {
 .program__card,
 .program__card1 {
   background-color: hsla(79, 6%, 64%, 0.07); /* Fixed hsla typo */
+  grid-template-columns: repeat(2, 1fr) !important;
   padding: 1.5rem 2rem;
   border: 2px solid transparent;
   transition: 2s ease;
